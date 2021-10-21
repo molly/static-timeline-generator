@@ -1,0 +1,32 @@
+{
+  "name": "timeline-template",
+  "version": "1.0.0",
+  "description": "Easily-forkable project to create timelines like https://www.mollywhite.net/wikimedia-timeline/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molly/timeline-template.git"
+  },
+  "keywords": [
+    "timeline"
+  ],
+  "author": "Molly White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molly/timeline-template/issues"
+  },
+  "homepage": "https://github.com/molly/timeline-template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "ejs": "^3.1.6",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "moment": "^2.29.1",
+    "sass": "^1.43.2"
+  }
+}

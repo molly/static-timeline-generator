@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <% include /head %>
+</head>
+<body>
+    <% if (content.header) { %>
+    <header class="page-header">
+        <% if (content.header.substring(0, 3) !== "<p>") { %><p><% } %>
+        <%- content.header %>
+        <% if (content.header.substring(0, 3) !== "</p>") { %><p><% } %>
+    </header>
+    <% } %>
+    <section>
+        <div class="timeline-filter-wrapper">
+            <header class="timeline-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="filter-shortcut" id="all" checked /> <label for="all">All</label>
+                    </li>
+                    <% content.filters.forEach(function(filter){ %>
+                        <li>
+                            <input type="checkbox" name="filter" id="<%= filter %>" checked /> <label for="<%= filter %>"><%- utilities.sentenceCase(filter) %> </label>
+                        </li>
+                    <% }); %>
+                    </ul>
+                </header>
+            </div>
+            <% content.entries.forEach(function(entry){ %>
+                <article class="timeline">
+                    <div class="timeline-entry" data-category='<%= entry.categoriesString %>'>
+                        <div class="timeline-icon <%= entry.color %>">
+                            <% if (entry.faicon) { %>
+                                <i class="fas fa-<%= entry.faicon %>"></i>
+                            <% } %>
+                        </div>
+                        <div class="timeline-description">
+                            <span class="timestamp"><time datetime="<%- entry.datetime || entry.date %>"><%- utilities.humanizeDate(entry.datetime, entry.date) %></time></span>
+                            <h2><a id="<%= entry.id %>" href="#<%= entry.id %>"><i class="fas fa-link"></i></a><%- entry.title %></h2>
+                            <% if (entry.image) { %>
+                                <div class="captioned-image image-right">
+                                    <% if (entry.image.link) { %><a href="<%= entry.image.link %>"><% } %>
+                                    <img src="<%= entry.image.src %>" alt="<%= entry.image.src %>" />
+                                    <% if (entry.image.link) { %></a><% } %>
+                                    <% if (entry.image.caption) { %>
+                                        <span class="caption"><%- entry.image.caption %></span></span>
+                                    <% } %>
+                                </div>
+                            <% } %>
+                            <% if (entry.body.substring(0, 3) !== "<p>") { %><p><% } %>
+                            <%- entry.body %>
+                            <% if (entry.body.substring(0, 3) !== "<p>") { %></p><% } %>
+                            <% if (entry.links) { %>
+                                <ul>
+                                    <% entry.links.forEach(function (link) { %>
+                                        <li>
+                                            <a href="<%= link.href %>"><%- link.text %></a>
+                                        </li>
+                                    <% }) %>
+                                </ul>
+                            <% } %>
+                        </div>
+                    </div>
+                </article>
+            <% }); %>
+        </section>
+        <% if (content.footer) { %>
+        <footer class="page-footer">
+            <% if (content.footer.substring(0, 3) !== "<p>") { %><p><% } %>
+            <%- content.footer %></p>
+            <% if (content.footer.substring(0, 3) !== "<p>") { %></p><% } %>
+        </footer>
+        <% } %>
+
+        <script src="js/classlist-polyfill.js"></script>
+        <script src="js/site-js.js"></script>
+    </body>
+</html>
