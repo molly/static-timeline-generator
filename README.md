@@ -45,3 +45,14 @@ If you would like to add more color options for the circles on the timeline, you
 You would then use `color: yourcolorhere` in the content.js file.
 
 Replace the images in the `images` folder to customize the page [favicon](https://blog.hubspot.com/website/what-is-a-favicon) and [OpenGraph image](https://blog.hubspot.com/marketing/open-graph-tags-facebook-twitter-linkedin).
+
+## Under the hood
+This project uses
+* [11ty](https://www.11ty.dev)
+* [EJS](https://ejs.co/)
+* [moment.js](https://momentjs.com/)
+* [FontAwesome](https://fontawesome.com/)
+* [normalize.css](https://github.com/necolas/normalize.css)
+* [classlist-polyfill](https://github.com/eligrey/classList.js)
+
+It is released under the [MIT license](https://github.com/molly/static-timeline-generator/blob/main/LICENSE).
