@@ -45,7 +45,12 @@ const entries = [
   },
 ];
 
-// DON'T EDIT BELOW THIS LINE!
+// Page details
+const pageTitle = 'Static timeline generator'; // The title of the page that shows in the browser tab
+const pageDescription = 'A super fancy timeline'; // The description of the page for search engines
+const pageAuthor = 'Jane Doe'; // Your name
+
+// DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
   const filters = new Set();
   for (var i = 0; i < entries.length; i++) {
@@ -75,4 +80,9 @@ module.exports = {
   footer,
   entries: addCategoriesStringsToEntries(entries),
   filters: getFilters(entries),
+  head: {
+    title: pageTitle,
+    description: pageDescription,
+    author: pageAuthor,
+  },
 };

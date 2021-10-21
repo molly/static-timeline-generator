@@ -9,3 +9,9 @@
 .timeline-icon.grey {
   background-color: #999;
 }
+
+/* Define new color options like so:
+.timeline-icon.yourcolorhere {
+  background-color: #hexcolor
+}
+*/
