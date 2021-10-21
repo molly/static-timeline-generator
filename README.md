@@ -1,6 +1,8 @@
 # Static timeline generator
 Easily create a static timeline webpage like my [Wikimedia timeline](https://www.mollywhite.net/wikimedia-timeline/).
 
+![Screenshot of a timeline page with dummy content](docs/screenshot.png)
+
 ## Install
 Clone this repository, then run `npm install` from the directory.
 
@@ -27,8 +29,8 @@ Almost all of the content you need to change is in `_data/content.js`.
     * caption (HTML, optional): A caption describing the image.
 * `body` (HTML, __required__): The text of the timeline entry. If you want multiple paragraphs, you have to include `<p>` tags yourself; otherwise, it will be added.
 * `links` (array of objects, optional): An array of links to display at the bottom of the entry.
-    * `href` (string, required): The target of the link.
-    * `linkText` (HTML, required): Link text.
+    * `href` (string, __required__): The target of the link.
+    * `linkText` (HTML, __required__): Link text.
     * `extra` (HTML, optional): Extra HTML to display at the end of the link.
 
 ### Additional customization
