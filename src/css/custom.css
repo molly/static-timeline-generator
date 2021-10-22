@@ -15,3 +15,8 @@
   background-color: #hexcolor
 }
 */
+
+header.page-header,
+footer.page-footer {
+  background-color: #005289;
+}
