@@ -23,11 +23,11 @@ Almost all of the content you need to change is in `src/_data/content.js`.
   * `datetime` (string, either `datetime` or `date` must be present): A date and time specifier for the item. This can be in [any format that `moment.js` recognizes](https://momentjs.com/docs/#/parsing/string/). I normally do "YYYY-MM-DD HH-SS". If there is no time, only a date, use the `date` parameter instead of `datetime`.
   * `date` (string, either `datetime` or `date` must be present): A date specifier for the item. "YYYY-MM-DD".
   * `title` (HTML, __required__): The title of the timeline entry.
-  * image (optional): An image to display in the entry
-    * src (string, required): A direct URL to the image file to be embedded on the page, or a relative link to an image in this directory (for example `img/filename.png`).
-    * link (string, optional): A hyperlink to the page containing the image, if you'd like people to be able to click it to see a larger version, etc.
-    * alt (string, optional): [Alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) describing the image.
-    * caption (HTML, optional): A caption describing the image.
+  * `image` (optional): An image to display in the entry
+    * `src` (string, required): A direct URL to the image file to be embedded on the page, or a relative link to an image in this directory (for example `img/filename.png`).
+    * `link` (string, optional): A hyperlink to the page containing the image, if you'd like people to be able to click it to see a larger version, etc.
+    * `alt` (string, optional): [Alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) describing the image.
+    * `caption` (HTML, optional): A caption describing the image.
   * `body` (HTML, __required__): The text of the timeline entry. If you want multiple paragraphs, you have to include `<p>` tags yourself; otherwise, it will be added.
   * `links` (array of objects, optional): An array of links to display at the bottom of the entry.
     * `href` (string, __required__): The target of the link.
