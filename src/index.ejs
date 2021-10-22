@@ -6,9 +6,9 @@
 <body>
     <% if (content.header) { %>
     <header class="page-header">
-        <% if (content.header.substring(0, 3) !== "<p>") { %><p><% } %>
+        <% if (!utilities.isWrappedInParagraphTags(content.header)) { %><p><% } %>
         <%- content.header %>
-        <% if (content.header.substring(0, 3) !== "</p>") { %><p><% } %>
+        <% if (!utilities.isWrappedInParagraphTags(content.header)) { %><p><% } %>
     </header>
     <% } %>
     <section>
@@ -28,7 +28,7 @@
             </div>
             <% content.entries.forEach(function(entry){ %>
                 <article class="timeline">
-                    <div class="timeline-entry" data-category='<%= entry.categoriesString %>'>
+                    <div class="timeline-entry" data-category='<%= entry.categoriesString %>' aria-hidden="false">
                         <div class="timeline-icon <%- entry.color || 'grey' %>">
                             <% if (entry.faicon) { %>
                                 <i class="fas fa-<%= entry.faicon %>"></i>
@@ -47,9 +47,9 @@
                                     <% } %>
                                 </div>
                             <% } %>
-                            <% if (entry.body.substring(0, 3) !== "<p>") { %><p><% } %>
+                            <% if (!utilities.isWrappedInParagraphTags(entry.body)) { %><p><% } %>
                             <%- entry.body %>
-                            <% if (entry.body.substring(0, 3) !== "<p>") { %></p><% } %>
+                            <% if (!utilities.isWrappedInParagraphTags(entry.body)) { %></p><% } %>
                             <% if (entry.links) { %>
                                 <ul>
                                     <% entry.links.forEach(function (link) { %>
@@ -66,9 +66,9 @@
         </section>
         <% if (content.footer) { %>
         <footer class="page-footer">
-            <% if (content.footer.substring(0, 3) !== "<p>") { %><p><% } %>
+            <% if (!utilities.isWrappedInParagraphTags(content.footer)) { %><p><% } %>
             <%- content.footer %></p>
-            <% if (content.footer.substring(0, 3) !== "<p>") { %></p><% } %>
+            <% if (!utilities.isWrappedInParagraphTags(content.footer)) { %></p><% } %>
         </footer>
         <% } %>
 

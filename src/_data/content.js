@@ -18,7 +18,7 @@ const entries = [
     links: [
       {
         href: 'https://en.wikipedia.org/wiki/Cat',
-        text: 'Cat',
+        linkText: 'Cat',
       },
     ],
   },
@@ -39,7 +39,7 @@ const entries = [
     links: [
       {
         href: 'https://en.wikipedia.org/wiki/Dog',
-        text: 'Dog',
+        linkText: 'Dog',
       },
     ],
   },
