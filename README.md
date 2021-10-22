@@ -10,7 +10,7 @@ Clone this repository, then run `npm install` from the directory.
 
 ## Customize
 
-Almost all of the content you need to change is in `_data/content.js`.
+Almost all of the content you need to change is in `src/_data/content.js`.
 
 ### Primary content
 * `header` (HTML, optional): The content to display in the header at the top of the page. 
@@ -40,7 +40,7 @@ Almost all of the content you need to change is in `_data/content.js`.
 * `pageAuthor` (string, optinal): Page author to go into [meta](https://www.w3schools.com/tags/tag_meta.asp) tags.
 
 ## Additional customization
-If you would like to add more color options for the circles on the timeline, you can edit the `css/custom.css` file to add your own. You can use [this tool](https://htmlcolorcodes.com/) to pick colors and get their hex color codes. They are defined like so:
+If you would like to add more color options for the circles on the timeline, you can edit the `src/css/custom.css` file to add your own. You can use [this tool](https://htmlcolorcodes.com/) to pick colors and get their hex color codes. They are defined like so:
 
 ```css
 .timeline-icon.yourcolorhere {
@@ -50,7 +50,7 @@ If you would like to add more color options for the circles on the timeline, you
 
 You would then use `color: yourcolorhere` in the content.js file.
 
-Replace the images in the `images` folder to customize the page [favicon](https://blog.hubspot.com/website/what-is-a-favicon) and [OpenGraph image](https://blog.hubspot.com/marketing/open-graph-tags-facebook-twitter-linkedin).
+Replace the images in the `src/img` folder to customize the page [favicon](https://blog.hubspot.com/website/what-is-a-favicon) and [OpenGraph image](https://blog.hubspot.com/marketing/open-graph-tags-facebook-twitter-linkedin).
 
 ## Under the hood
 This project uses
