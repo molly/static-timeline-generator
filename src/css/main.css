@@ -265,14 +265,14 @@ div.etc .description {
 
 /* Make this less sad on mobile */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 768px) {
   .timeline-entry.even .timeline-description:after {
     left: 100%;
     border-left-color: #fff;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
   .timeline::before {
     left: 0;
   }
