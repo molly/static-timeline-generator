@@ -148,25 +148,6 @@ footer.page-footer a {
   margin-left: 55%;
 }
 
-.timeline-description:after {
-  top: 20px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: #e0e0e0;
-  border-width: 10px;
-  margin-top: -10px;
-  z-index: 100;
-}
-
-.timeline-entry.odd .timeline-description:after {
-  right: 100%;
-  border-right-color: #fff;
-}
-
 .timeline-description .timestamp {
   font-style: italic;
   font-size: 80%;
@@ -265,14 +246,42 @@ div.etc .description {
 
 /* Make this less sad on mobile */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .timeline-entry.even .timeline-description:after {
     left: 100%;
     border-left-color: #fff;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+  .timeline-entry.even .timeline-description:after {
+    right: 100%;
+    border-right-color: #fff;
+  }
+}
+
+
+@media only screen and (min-width: 415px) {
+  .timeline-description:after {
+    top: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-top: -10px;
+    z-index: 100;
+  }
+  
+  .timeline-entry.odd .timeline-description:after {
+    right: 100%;
+    border-right-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .timeline::before {
     left: 0;
   }
@@ -291,15 +300,38 @@ div.etc .description {
     margin-left: 50px;
   }
 
-  .timeline-entry.even .timeline-description:after {
-    right: 100%;
-    border-right-color: #fff;
-  }
-
   .timeline-description {
     width: 90%;
   }
+}
 
+/* Small screens */
+@media only screen and (max-width: 414px) {
+  .timeline-description img,
+  .captioned-image {
+    max-width: none;
+    width: 100%;
+  }
+
+  .timeline:after {
+    display: none;
+  }  
+
+  .timeline-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+  }
+
+  .timeline-icon i {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .timeline-entry.odd .timeline-description,
+  .timeline-entry.even .timeline-description {
+    margin-left: 35px;
+  }
 }
 
 /* Fallback for no Javascript */

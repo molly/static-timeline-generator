@@ -7,6 +7,8 @@ __Contents__
     + [Primary content](#primary-content)
     + [Meta](#meta)
   * [Additional customization](#additional-customization)
+  * [Responsiveness](#responsiveness)
+  * [Browser compatibility](#browser-compatibility)
   * [Under the hood](#under-the-hood)
 
 ![Screenshot of a timeline page with dummy content](docs/screenshot.png)
@@ -59,6 +61,18 @@ If you would like to add more color options for the circles on the timeline, you
 You would then use `color: yourcolorhere` in the content.js file.
 
 Replace the images in the `src/img` folder to customize the page [favicon](https://blog.hubspot.com/website/what-is-a-favicon) and [OpenGraph image](https://blog.hubspot.com/marketing/open-graph-tags-facebook-twitter-linkedin).
+
+## Responsiveness
+Timelines will render well on tablets:
+
+<img src="docs/tablet.png" alt="Screenshot rendered on a tablet device" width="500"/>
+
+or mobile devices:
+
+<img src="docs/phone.png" alt="Screenshot rendered on a phone" width="400"/>
+
+## Browser compatibility
+This should work well on all modern browsers. IE <9 is not supported.
 
 ## Under the hood
 This project uses
