@@ -74,6 +74,8 @@ or mobile devices:
 ## Browser compatibility
 This should work well on all modern browsers. IE <9 is not supported.
 
+Without JavaScript enabled, the page degrades gracefully. However, posts will show in a single-column timeline and filters will not show.
+
 ## Under the hood
 This project uses
 * [11ty](https://www.11ty.dev)
