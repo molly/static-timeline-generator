@@ -11,7 +11,7 @@ __Contents__
   * [Browser compatibility](#browser-compatibility)
   * [Under the hood](#under-the-hood)
 
-![Screenshot of a timeline page with dummy content](docs/screenshot.png)
+![Screenshot of a timeline page with dummy content](docs/browser.png)
 
 ## Install
 Clone this repository, then run `npm install` from the directory.
