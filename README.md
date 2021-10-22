@@ -12,6 +12,7 @@ Clone this repository, then run `npm install` from the directory.
 
 Almost all of the content you need to change is in `_data/content.js`.
 
+### Primary content
 * `header` (HTML, optional): The content to display in the header at the top of the page. 
 * `footer` (HTML, optional): The content to display in the footer at the bottom of the page. 
 * `entries` (array of objects, __required__): The list of entries to display on the timeline, in the order they should display.
@@ -27,13 +28,18 @@ Almost all of the content you need to change is in `_data/content.js`.
     * link (string, optional): A hyperlink to the page containing the image, if you'd like people to be able to click it to see a larger version, etc.
     * alt (string, optional): [Alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) describing the image.
     * caption (HTML, optional): A caption describing the image.
-* `body` (HTML, __required__): The text of the timeline entry. If you want multiple paragraphs, you have to include `<p>` tags yourself; otherwise, it will be added.
-* `links` (array of objects, optional): An array of links to display at the bottom of the entry.
+  * `body` (HTML, __required__): The text of the timeline entry. If you want multiple paragraphs, you have to include `<p>` tags yourself; otherwise, it will be added.
+  * `links` (array of objects, optional): An array of links to display at the bottom of the entry.
     * `href` (string, __required__): The target of the link.
     * `linkText` (HTML, __required__): Link text.
     * `extra` (HTML, optional): Extra HTML to display at the end of the link.
 
-### Additional customization
+### Meta 
+* `pageTitle` (string, __required__): The text to go in the `<title>` tag, to set the title of the page in the browser.
+* `pageDescription` (string, optional): Page description to go into [meta](https://www.w3schools.com/tags/tag_meta.asp) tags.
+* `pageAuthor` (string, optinal): Page author to go into [meta](https://www.w3schools.com/tags/tag_meta.asp) tags.
+
+## Additional customization
 If you would like to add more color options for the circles on the timeline, you can edit the `css/custom.css` file to add your own. You can use [this tool](https://htmlcolorcodes.com/) to pick colors and get their hex color codes. They are defined like so:
 
 ```css
