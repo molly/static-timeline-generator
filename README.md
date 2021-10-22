@@ -24,7 +24,7 @@ Almost all of the content you need to change is in `src/_data/content.js`.
   * `date` (string, either `datetime` or `date` must be present): A date specifier for the item. "YYYY-MM-DD".
   * `title` (HTML, __required__): The title of the timeline entry.
   * image (optional): An image to display in the entry
-    * src (string, required): A direct URL to the image file to be embedded on the page, or a relative link to an image in this directory (for example `/img/filename.png`).
+    * src (string, required): A direct URL to the image file to be embedded on the page, or a relative link to an image in this directory (for example `img/filename.png`).
     * link (string, optional): A hyperlink to the page containing the image, if you'd like people to be able to click it to see a larger version, etc.
     * alt (string, optional): [Alt text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) describing the image.
     * caption (HTML, optional): A caption describing the image.
