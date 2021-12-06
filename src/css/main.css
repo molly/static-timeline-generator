@@ -46,7 +46,7 @@ footer.page-footer p {
 
 header.page-header a,
 footer.page-footer a {
-  color: #7ACBFF;
+  color: #7acbff;
 }
 
 .timeline {
@@ -260,12 +260,11 @@ div.etc .description {
   }
 }
 
-
 @media only screen and (min-width: 415px) {
   .timeline-description:after {
     top: 20px;
     border: solid transparent;
-    content: " ";
+    content: ' ';
     height: 0;
     width: 0;
     position: absolute;
@@ -274,7 +273,7 @@ div.etc .description {
     margin-top: -10px;
     z-index: 100;
   }
-  
+
   .timeline-entry.odd .timeline-description:after {
     right: 100%;
     border-right-color: #fff;
@@ -291,7 +290,7 @@ div.etc .description {
   }
 
   .timeline-entry,
-  .timeline-entry.short  {
+  .timeline-entry.short {
     margin-top: 25px;
   }
 
@@ -315,7 +314,7 @@ div.etc .description {
 
   .timeline:after {
     display: none;
-  }  
+  }
 
   .timeline-icon {
     width: 30px;
