@@ -31,7 +31,7 @@
                 <div class="timeline-entry" data-category='<%= entry.categoriesString %>' aria-hidden="false">
                     <div class="timeline-icon <%- entry.color || 'grey' %>">
                         <% if (entry.faicon) { %>
-                            <i class="fas fa-<%= entry.faicon %>"></i>
+                            <i class="fas fa-<%= entry.faicon %>" aria-hidden="true"></i>
                         <% } %>
                     </div>
                     <div class="timeline-description">
@@ -43,7 +43,7 @@
                                 <img src="<%= entry.image.src %>" alt="<%= entry.image.src %>" />
                                 <% if (entry.image.link) { %></a><% } %>
                                 <% if (entry.image.caption) { %>
-                                    <span class="caption"><%- entry.image.caption %></span></span>
+                                    <span class="caption"><%- entry.image.caption %></span>
                                 <% } %>
                             </div>
                         <% } %>
@@ -54,7 +54,7 @@
                             <ul>
                                 <% entry.links.forEach(function (link) { %>
                                     <li>
-                                        <a href="<%= link.href %>" target="_blank"><%- link.linkText %></a><%- link.extraText && ' ' + link.extraText %>
+                                        <a href="<%= link.href %>" target="_blank"><%- link.linkText %></a><%- link.extraText %>
                                     </li>
                                 <% }) %>
                             </ul>
@@ -67,7 +67,7 @@
         <% if (content.footer) { %>
         <footer class="page-footer">
             <% if (!utilities.isWrappedInParagraphTags(content.footer)) { %><p><% } %>
-            <%- content.footer %></p>
+            <%- content.footer %>
             <% if (!utilities.isWrappedInParagraphTags(content.footer)) { %></p><% } %>
         </footer>
         <% } %>
