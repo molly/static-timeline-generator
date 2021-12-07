@@ -4,7 +4,7 @@ const sentenceCase = function (str) {
   if (typeof str !== 'string' || !str.length) {
     return str;
   }
-  str = str.replaceAll(/-/g, ' ');
+  str = str.replace(/-/g, ' ');
   return str[0].toUpperCase() + str.slice(1).toLowerCase();
 };
 
