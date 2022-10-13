@@ -9,6 +9,9 @@ Easily create a static timeline webpage like my [Wikimedia timeline](https://www
   - [Primary content](#primary-content)
   - [Meta](#meta)
 - [Additional customization](#additional-customization)
+- [Deploy](#deploy)
+  - [GitHub Pages](#github-pages)
+  - [Other services](#other-services)
 - [Responsiveness](#responsiveness)
 - [Browser compatibility](#browser-compatibility)
 - [Under the hood](#under-the-hood)
@@ -72,9 +75,9 @@ Replace the images in the `src/img` folder to customize the page [favicon](https
 
 Once you run `npm run-script buld`, you will see a `_site` directory containing static HTML/CSS/JS files with your site content. You can now use any static site hosting to deploy these files!
 
-### Github pages
+### GitHub pages
 
-To deploy your static site on Github pages (free!), create a branch containing the static files in the root directory by running `git subtree push --prefix _site origin gh-pages`. Then you can go to your repository's Settings > Pages options and choose "Deploy from a branch", then select `gh-pages` as the branch.
+To deploy your static site on GitHub pages (free), create a branch containing the static files in the root directory by running `git subtree push --prefix _site origin gh-pages`. Then you can go to your repository's Settings > Pages options and choose "Deploy from a branch", then select `gh-pages` as the branch.
 
 <img src="docs/gh-pages-config.png" alt="Github Pages config settings. Under 'Build and deployment', Source is set to 'Deploy from a branch', branch is set to 'gh-pages', and the folder is set to '/ (root)'." width="500"/>
 
