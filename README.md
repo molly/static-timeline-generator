@@ -1,6 +1,6 @@
 # Static timeline generator
 
-Easily create a static timeline webpage like my [Wikimedia timeline](https://www.mollywhite.net/wikimedia-timeline/).
+Easily create a static timeline webpage like my [Wikimedia timeline](https://www.mollywhite.net/wikimedia-timeline/). Check out a preview of this sample site, deployed with GitHub Pages: https://molly.github.io/static-timeline-generator/.
 
 **Contents**
 
@@ -67,6 +67,29 @@ If you would like to add more color options for the circles on the timeline, you
 You would then use `color: yourcolorhere` in the content.js file.
 
 Replace the images in the `src/img` folder to customize the page [favicon](https://blog.hubspot.com/website/what-is-a-favicon) and [OpenGraph image](https://blog.hubspot.com/marketing/open-graph-tags-facebook-twitter-linkedin).
+
+## Deploy
+
+Once you run `npm run-script buld`, you will see a `_site` directory containing static HTML/CSS/JS files with your site content. You can now use any static site hosting to deploy these files!
+
+### Github pages
+
+To deploy your static site on Github pages (free!), create a branch containing the static files in the root directory by running `git subtree push --prefix _site origin gh-pages`. Then you can go to your repository's Settings > Pages options and choose "Deploy from a branch", then select `gh-pages` as the branch.
+
+<img src="docs/gh-pages-config.png" alt="Github Pages config settings. Under 'Build and deployment', Source is set to 'Deploy from a branch', branch is set to 'gh-pages', and the folder is set to '/ (root)'." width="500"/>
+
+### Other services
+
+There are some good tutorials out there for deploying a static site on various other free services. A few are listed below.
+
+You can also look for tutorials on how to deploy a site built with [eleventy](https://www.11ty.dev/), since that's what's powering this project. Some webhosting services like Vercel specifically support eleventy in some really handy ways.
+
+- [Netlify](https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/)
+- [Vercel](https://vercel.com/guides/deploying-eleventy-with-vercel)
+- [Render](https://render.com/)
+  - Create a new Static Site on Render
+  - Set "build command" to `npm run-script build`
+  - Set "publish directory" to `_site`
 
 ## Responsiveness
 
