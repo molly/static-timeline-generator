@@ -1,54 +1,33 @@
-const header = 'Welcome to this wonderful example timeline.';
-const footer = 'A footer goes here.';
+const header = '<h1>Twitter is going great!</h1><p>... and definitely does not develop features primarily to stroke Elon Musk\'s delicate ego';
+const footer = 'This has been a product of the Today in Tabs Reader\'s Union';
 const entries = [
   {
-    id: 'cat',
-    categories: ['cat'],
-    color: 'green',
-    faicon: 'cat',
-    datetime: '2021-01-01 05:00',
-    title: 'Cats are very good',
+  id: 'verified1',
+  categories: ['actual deliverables'],
+  color: 'twitterblue',
+    faicon: 'poop',
+  datetime: '2022-11-09 14:41',
+  title: 'Verified accounts: now featuring Ambiguity!',
     image: {
-      link: 'http://placekitten.com',
-      src: 'http://placekitten.com/200/300',
-      alt: 'A placeholder kitten',
-      caption: 'Kitten!',
+    link: 'https://twitter.com/TylerGlaiel/status/1590474705504718848',
+    src: 'https://pbs.twimg.com/media/FhKAKSLUYAEcwwI?format=png&name=900x900',
+    alt: 'Valve software\'s Twitter profile with the blue checkmark highlighted, with information about the Verified account provided as "this account is verified because it\'s subscribed to Twitter Blue." with a link to learn more, pointing to the link used by this timeline entry. ',
+    caption: 'Screenshot credit: Tyler Glaiel',
     },
-    body: "The best thing in the universe is a cardboard box. Chirp at birds catasstrophe for meowwww for hiding behind the couch until lured out by a feathery toy for morning beauty routine of licking self sugar, my siamese, stalks me (in a good way), day and night lick the other cats. Pushed the mug off the table shove bum in owner's face like camera lens or tickle my belly at your own peril i will pester for food when you're in the kitchen even if it's salad and grass smells good, licks your face, but hiiiiiiiiii feed me now.",
+  body: 'Content designers at Twitter are crying while updating the microcopy to help you understand whether a blue checkmark means an account is verified because it\'s paying Elon Musk money for Twitter Blue, or because their identity has actually been verified. The tech writers at Twitter joined them in sadness while struggling to explain what the blue checkmark means. Despite persistent efforts to use "now" in technical documentation, they are now forced to describe that "Until now, Twitter used the blue checkmark to indicate active, notable, and authentic accounts of public interest that Twitter had independently verified based on certain requirements." and that going forward, "the blue checkmark may mean two different things: either that an account was verified under the previous verification criteria (active, notable, and authentic), or that the account has an active subscription to Twitter’s new Twitter Blue subscription service, which was made available on iOS in the US, Canada, Australia New Zealand and the UK on November 9, 2022. Accounts that receive the blue checkmark as part of a Twitter Blue subscription will not undergo review to confirm that they meet the active, notable and authentic criteria that was used in the previous process". But of course.',
     links: [
       {
-        href: 'https://en.wikipedia.org/wiki/Cat',
-        linkText: 'Cat',
-      },
-    ],
-  },
-  {
-    id: 'dog',
-    categories: ['dog'],
-    color: 'green',
-    faicon: 'dog',
-    datetime: '2021-05-01 23:55',
-    title: 'Puppies are great too',
-    image: {
-      link: 'http://place-puppy.com',
-      src: 'https://place-puppy.com/300x300',
-      alt: 'A placeholder puppy',
-      caption: 'Puppy!',
-    },
-    body: 'Doggo ipsum sub woofer smol wow very biscit aqua doggo pupper dat tungg tho big ol pupper, very jealous pupper mlem heckin angery woofer very jealous pupper. Blep waggy wags long doggo, corgo. Tungg wow such tempt mlem very jealous pupper boofers lotsa pats, snoot smol big ol ruff doge super chub, long doggo heckin good boys and girls h*ck heck. Shoober blop many pats borkf, such treat. Big ol what a nice floof long water shoob wrinkler heck sub woofer, pupper porgo wow very biscit.',
-    links: [
-      {
-        href: 'https://en.wikipedia.org/wiki/Dog',
-        linkText: 'Dog',
+      href: 'https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts',
+      linkText: 'What does the blue checkmark mean?',
       },
     ],
   },
 ];
 
 // Page details
-const pageTitle = 'Static timeline generator'; // The title of the page that shows in the browser tab
-const pageDescription = 'A super fancy timeline'; // The description of the page for search engines
-const pageAuthor = 'Jane Doe'; // Your name
+const pageTitle = 'Twitter is Going Great'; // The title of the page that shows in the browser tab
+const pageDescription = 'How is Twitter doing? The answer is revealed'; // The description of the page for search engines
+const pageAuthor = 'Chirper'; // Your name
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
