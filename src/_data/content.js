@@ -283,8 +283,8 @@ const entries = [
     title: 'GANs take over',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://pbs.twimg.com/media/FhPTWHdXgAAGYZO?format=jpg&name=medium',
+      alt: 'collage of the profiles of 13 Twitter accounts with GAN-generated faces and blue checkmarks',
       caption: '',
     },
     body: 'When you want your bots to be somewhat more legitimate than eggs, you generate them faces!',
