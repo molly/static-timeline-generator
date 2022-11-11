@@ -3,7 +3,7 @@ const footer = 'Documenting the busiest period of Twitter updates since 2007.';
 const entries = [
   {
     id: '1',
-    categories: ['actual deliverables'],
+    categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
     datetime: '2022-11-09 14:41',
@@ -213,7 +213,7 @@ const entries = [
   },
   {
     id: '12',
-    categories: [''],
+    categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
     datetime: '2022-11-10 15:45',
@@ -278,7 +278,7 @@ const entries = [
     id: '15',
     categories: ['Robot Uprising', 'Twitter Blue'],
     color: 'blue',
-    faicon: 'dog',
+    faicon: 'robot',
     datetime: '2022-11-10 15:31',
     title: 'GANs take over',
     image: {
