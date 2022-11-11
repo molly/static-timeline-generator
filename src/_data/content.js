@@ -1,5 +1,7 @@
-const header = '<h1>Twitter is going great!</h1><p>... and definitely does not develop features primarily to stroke Elon Musk\'s delicate ego';
-const footer = '<p class="tagline">Documenting the busiest period of Twitter updates since 2007.</p><p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>';
+const header =
+  "<h1>Twitter is going great!</h1><p>... and definitely does not develop features primarily to stroke Elon Musk's delicate ego";
+const footer =
+  '<p class="tagline">Documenting the busiest period of Twitter updates since 2007.</p><p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>';
 const entries = [
   {
     id: 'verified1',
@@ -47,7 +49,7 @@ const entries = [
 
 // Page details
 const pageTitle = 'Twitter is Going Great!'; // The title of the page that shows in the browser tab
-const pageDescription = ' Every day in every way, Twitter is getting better and better.'; // The description of the page for search engines
+const pageDescription = 'Every day in every way, Twitter is getting better and better.'; // The description of the page for search engines
 const pageAuthor = 'Volunteers from the Today in Tabs Discord'; // Your name
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------

@@ -31,6 +31,10 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "moment": "^2.29.1",
-    "node-sass": "npm:sass@^1.44.0"
+    "node-sass": "npm:sass@^1.44.0",
+    "prettier": "^2.7.1"
+  },
+  "volta": {
+    "node": "14.21.1"
   }
 }
