@@ -26,7 +26,7 @@ const entries = [
     id: '2',
     categories: ['Robot Uprising'],
     color: 'blue',
-    faicon: 'dog',
+    faicon: 'robot',
     datetime: '2022-11-09 21:46',
     title: 'Verified accounts: now featuring Ambiguity!',
     image: {
@@ -70,11 +70,11 @@ const entries = [
     color: 'blue',
     faicon: 'dog',
     datetime: '2022-11-10 07:13',
-    title: 'Mutual Non-Compliance Pact',
+    title: 'Legal Compliance Who?',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590724257608134657.jpg?lang=en&tz=-8',
+      alt: '"According to messages shared in Twitter Slack, Twitter’s CISO, chief privacy office, and chief compliance officer all resigned last night. An employee says it will be up to engineers to “self-certify compliance with FTC requirements and other laws.”"',
       caption: '',
     },
     body: "Casey Newton: According to messages shared in Twitter Slack, Twitter\u2019s CISO, chief privacy officer, and chief compliance officer all resigned last night.\n\nAn employee says it will be up to engineers to \u201cself-certify compliance with FTC requirements and other laws.\u201d",
@@ -91,7 +91,7 @@ const entries = [
     color: 'blue',
     faicon: 'dog',
     datetime: '2022-11-10 08:52',
-    title: 'Legal Compliance Who?',
+    title: 'Mutual Non-Compliance Pact',
     image: {
       link: '',
       src: '',
@@ -115,8 +115,8 @@ const entries = [
     title: '@elon__rnusk announces Twitter Gold',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590532150792974336.jpg?lang=en&tz=-8',
+      alt: 'Screenshot of a tweet reading "I take it all back. this new verification scheme is flawless" with a screenshot attached of an Elon Musk parody account reading "Starting today we\'ll begin offering Twitter Gold: a free subscription that gets you yearly family vacations and nightly dinners with me. If your name is Grimes. Please come back. I love you.',
       caption: '',
     },
     body: "A blue-check Elon Musk parody account announces \"Twitter Gold\" to win Grimes back.",
@@ -136,11 +136,11 @@ const entries = [
     title: 'Like a train crash filled with glitter',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590632287544438784.jpg?lang=en&tz=-8',
+      alt: 'Tweet saying "Twitter Blue is going about as well as everyone predicted, and it is an amazing spectacle to watch. Like a train crash filled with glitter."',
       caption: '',
     },
-    body: 'Verified Tony Blair commiserates with Verified George Bush',
+    body: 'Verified Tony Blair commiserates with Verified George Bush about how they miss killing Iraqis.',
     links: [
       {
         href: 'https://twitter.com/misterratt/status/1590632287544438784',
@@ -157,8 +157,8 @@ const entries = [
     title: 'Musk chortles at Twitter Blue disasters',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590728262623563777.png?lang=en&tz=-8',
+      alt: 'Screenshot of a tweet reply to Casey Newton, saying Meanwhile with a screenshot attached of a twitter response described in this timeline entry.',
       caption: '',
     },
     body: 'Elon takes the time to tweet emoji laughter in response to a Tweet that says "A verified Mario gave everyone the middle finger and President Biden is talking about sucking his own penis."',
@@ -178,8 +178,8 @@ const entries = [
     title: 'Double Trouble',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590415250205323264.png?lang=en&tz=-8',
+      alt: 'Screenshot of a tweet reading There are two Twitter Blues, one more expensive than the other, itself with a screenshot of the Twitter UI advertising Twitter Blue for $4.99 and Twitter Blue for $7.99 monthly.',
       caption: '',
     },
     body: 'There are two Twitter Blues, one more expensive than the other.',
@@ -241,8 +241,8 @@ const entries = [
     title: 'Parody accounts now need to say parody in their name',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590884973535711232.png?lang=en&tz=-8',
+      alt: 'Tweet from Elon Musk stating Going forward,accounts engaged in parody must include "parody" in their name, not just in bio',
       caption: '',
     },
     body: "Elon, making yet another product decision by tweeting through it, may at some point figure this out. But will it be before Twitter goes bankrupt?",
@@ -262,8 +262,8 @@ const entries = [
     title: 'Captain Sully is leaving',
     image: {
       link: '',
-      src: '',
-      alt: '',
+      src: 'https://tweet2image.vercel.app/1590446178881392640.png?lang=en&tz=-8',
+      alt: 'Tweet screenshot from Sully Sullenberger stating To my friends on Twitter, I will be taking a step back from the platform for now. Connect with me on Facebook, LinkedIn, or Instagram to stay informed and hear my latest personal and professional updates.',
       caption: '',
     },
     body: 'Sometimes it sinks. Captain Sully tweeted out that he is taking a step back from Twitter for now.',
