@@ -35,7 +35,7 @@ const entries = [
       alt: "Screenshot of Elon tweet admitting that some proportion of users are bots",
       caption: '',
     },
-    body: "Content designers at Twitter are crying while updating the microcopy to help you understand whether a blue checkmark means an account is verified because it's paying Elon Musk money for Twitter Blue, or because their identity has actually been verified. The tech writers at Twitter joined them in sadness while struggling to explain what the blue checkmark means.",
+    body: "Elon Musk admits that his count of Twitter users includes bots.",
     links: [
       {
         href: 'https://twitter.com/mmasnick/status/1590581600072667136',
