@@ -8,7 +8,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-09 14:41',
+    datetime: '2022-11-09T14:41:00',
     title: 'Verified accounts: now featuring Ambiguity!',
     image: {
       link: 'https://twitter.com/TylerGlaiel/status/1590474705504718848',
@@ -29,7 +29,7 @@ const entries = [
     categories: ['Robot Uprising'],
     color: 'blue',
     faicon: 'robot',
-    datetime: '2022-11-09 21:46',
+    datetime: '2022-11-09T21:46:00',
     title: 'Verified accounts: now featuring Ambiguity!',
     image: {
       link: 'https://twitter.com/mmasnick/status/1590581600072667136',
@@ -50,7 +50,7 @@ const entries = [
     categories: ['No one minding the store'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 06:41',
+    datetime: '2022-11-10T06:41:00',
     title: 'CISO Resigns',
     image: {
       link: 'https://twitter.com/LeaKissner/status/1590706305102381058',
@@ -71,7 +71,7 @@ const entries = [
     categories: ['No one minding the store'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 07:13',
+    datetime: '2022-11-10T07:13:00',
     title: 'Legal Compliance Who?',
     image: {
       link: '',
@@ -92,7 +92,7 @@ const entries = [
     categories: ['No one minding the store'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 08:52',
+    datetime: '2022-11-10T08:52:00',
     title: 'Mutual Non-Compliance Pact',
     image: {
       link: '',
@@ -113,7 +113,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-09 18:29',
+    datetime: '2022-11-09T18:29:00',
     title: '@elon__rnusk announces Twitter Gold',
     image: {
       link: '',
@@ -134,7 +134,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 07:13',
+    datetime: '2022-11-10T07:13:00',
     title: 'Like a train crash filled with glitter',
     image: {
       link: '',
@@ -176,7 +176,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-09 10:45',
+    datetime: '2022-11-09T10:45:00',
     title: 'Double Trouble',
     image: {
       link: '',
@@ -197,7 +197,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 14:20',
+    datetime: '2022-11-10T14:20:00',
     title: 'Banana Republic!',
     image: {
       link: '',
@@ -218,7 +218,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 15:45',
+    datetime: '2022-11-10T15:45:00',
     title: 'Tesla Fake stays up for several hours',
     image: {
       link: '',
@@ -239,7 +239,7 @@ const entries = [
     categories: ['Twitter Blue'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-10 20:51',
+    datetime: '2022-11-10T20:51:00',
     title: 'Parody accounts now need to say parody in their name',
     image: {
       link: '',
@@ -260,7 +260,7 @@ const entries = [
     categories: ['Bye-Bye'],
     color: 'blue',
     faicon: 'dog',
-    datetime: '2022-11-09 15:48',
+    datetime: '2022-11-09T15:48:00',
     title: 'Captain Sully is leaving',
     image: {
       link: '',
@@ -281,7 +281,7 @@ const entries = [
     categories: ['Robot Uprising', 'Twitter Blue'],
     color: 'blue',
     faicon: 'robot',
-    datetime: '2022-11-10 15:31',
+    datetime: '2022-11-10T15:31:00',
     title: 'GANs take over',
     image: {
       link: '',
