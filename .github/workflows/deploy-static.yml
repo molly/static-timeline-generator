@@ -35,7 +35,9 @@ jobs:
           known_hosts: 'placeholder-to-appease-action'
       - name: Adding known hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+      - run: ls -al ~/.ssh/
       - name: Build the site
         run: npm run build
+      - run: ls -al
       - name: Rsync site directory to host
         run: rsync -avz ./_site/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/twitterisgoinggreat/
