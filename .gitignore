@@ -1,2 +1,6 @@
+# system files
 node_modules/
 .DS_Store
+
+# generated site files
+_site
