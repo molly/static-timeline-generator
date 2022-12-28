@@ -40,7 +40,7 @@
           data-category="<%= entry.categoriesString %>"
           aria-hidden="false"
         >
-          <div class="timeline-icon <%- entry.color || 'grey' %>">
+          <div class="timeline-icon <%- entry.color || 'grey' %>" title="<%= entry.faicon %>">
             <% if (entry.faicon) { %>
             <i class="fas fa-<%= entry.faicon %>" aria-hidden="true"></i>
             <% } %>
