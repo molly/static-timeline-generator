@@ -43,13 +43,17 @@ function hideUnchecked() {
 }
 
 function checkAll() {
+  var allIsChecked = document.querySelector('input[type="checkbox"]#all').checked;
   var checkboxes = document.querySelectorAll('input[type="checkbox"][name="filter"]');
   checkboxes.forEach(function (box) {
-    box.checked = true;
+    box.checked = allIsChecked;
   });
   var entries = document.getElementsByClassName('timeline-entry');
   for (var i = 0; i < entries.length; i++) {
-    show(entries[i]);
+    if (allIsChecked)
+      show(entries[i]);
+    else
+      hide(entries[i]);
   }
   reflowEntries();
 }
