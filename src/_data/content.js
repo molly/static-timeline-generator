@@ -41,6 +41,14 @@ const entries = [
         href: 'https://en.wikipedia.org/wiki/Dog',
         linkText: 'Dog',
       },
+      {
+        href: 'https://en.wikipedia.org/wiki/Canis',
+        linkText: 'Canis',
+      },
+      {
+        href: 'https://en.wikipedia.org/wiki/Lassie',
+        linkText: 'Lassie',
+      },
     ],
   },
 ];
@@ -49,6 +57,7 @@ const entries = [
 const pageTitle = 'Static timeline generator'; // The title of the page that shows in the browser tab
 const pageDescription = 'A super fancy timeline'; // The description of the page for search engines
 const pageAuthor = 'Jane Doe'; // Your name
+const showMirrorLinks = true; // Whether to show links to the Wayback Machine and archive.is mirrors.
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
@@ -78,6 +87,7 @@ const addCategoriesStringsToEntries = (entries) => {
 module.exports = {
   header,
   footer,
+  showMirrorLinks,
   entries: addCategoriesStringsToEntries(entries),
   filters: getFilters(entries),
   head: {
